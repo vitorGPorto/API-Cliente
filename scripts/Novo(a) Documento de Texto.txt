@@ -1,0 +1,19 @@
+create database dbApiClientes;
+use dbApiClientes;
+create table clientes(
+codigo int primary key auto_increment,
+nome varchar(30),
+cpf varchar(15),
+dataNascimento date,
+endereco varchar (40),
+estado varchar (30),
+cidade varchar(30)
+);
+
+show tables;
+
+insert into clientes (nome, cpf, dataNascimento, endereco, estado, cidade ) values('Vitor Porto', '757.456.310-15', '1999-10-10','jose cupertino', 'MG', 'Caete');
+insert into clientes (nome, cpf, dataNascimento, endereco, estado, cidade ) values('Porto', '783.893.930-50', '1998-11-10','Jose Sao geraldo', 'MG', 'BH');
+insert into clientes (nome, cpf, dataNascimento, endereco, estado, cidade ) values('Santos', '135.893.930-50', '1988-09-10',' Sao geraldo', 'SP', 'SP');
+
+select * from clientes;
